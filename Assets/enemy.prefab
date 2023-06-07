@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2210918163577904226}
   - component: {fileID: 7963953155415628275}
   - component: {fileID: 6643646448823666902}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ BoxCollider:
   m_GameObject: {fileID: 158558147233871747}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -109,7 +109,9 @@ GameObject:
   - component: {fileID: 3686070714032815728}
   - component: {fileID: 9036313358711597195}
   - component: {fileID: 2223017544862815736}
-  m_Layer: 0
+  - component: {fileID: 757793709}
+  - component: {fileID: 5026911958798308167}
+  m_Layer: 3
   m_Name: enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +126,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 536021867454684840}
   m_LocalRotation: {x: 0, y: 0.99855834, z: -0, w: -0.05367793}
-  m_LocalPosition: {x: 0.375, y: 0.158, z: 5.294}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -199,6 +201,35 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &757793709
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536021867454684840}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &5026911958798308167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536021867454684840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a55933a4c8cc7c942a682eb530cd0504, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
 --- !u!1 &1539042573462076992
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,7 +242,7 @@ GameObject:
   - component: {fileID: 2653499244881866661}
   - component: {fileID: 589562836709161220}
   - component: {fileID: 198464357205200882}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: visor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -292,7 +323,7 @@ BoxCollider:
   m_GameObject: {fileID: 1539042573462076992}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -308,7 +339,7 @@ GameObject:
   - component: {fileID: 860543166688650366}
   - component: {fileID: 9223071822717563738}
   - component: {fileID: 8328735356901980341}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: gun (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -389,7 +420,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 2060088090922046742}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
@@ -406,7 +437,7 @@ GameObject:
   - component: {fileID: 2737571487707013828}
   - component: {fileID: 7402608737176414545}
   - component: {fileID: 3880461959163460202}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -487,7 +518,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 8897494321705460611}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1

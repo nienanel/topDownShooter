@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 498787467528980457}
   - component: {fileID: 7833349886446279539}
   - component: {fileID: 6959441685681451171}
-  m_Layer: 0
+  - component: {fileID: 2728756365610094211}
+  m_Layer: 3
   m_Name: Bullets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 7235106560172187806}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.728, y: 0.134, z: 1.873}
-  m_LocalScale: {x: 0.27772737, y: 0.27772737, z: 0.27772737}
+  m_LocalScale: {x: -0.30703202, y: -0.30703202, z: -0.30703202}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -112,5 +113,18 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 14
+  m_Constraints: 4
   m_CollisionDetection: 0
+--- !u!114 &2728756365610094211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7235106560172187806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca599efdfd1614a4380e1e57caf6ed02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToDestroy: {fileID: 536021867454684840, guid: df57395252bb6944ebe10fec97bad817, type: 3}
